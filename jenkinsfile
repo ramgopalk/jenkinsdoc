@@ -43,7 +43,7 @@ pipeline{
 		stage('container') {
 
 			steps {
-				sh 'docker run -itd -p 91:80 --name ${tag} ramgopalkoya/nginxpoc:${GIT_BRANCH}'
+				sh 'docker run -itd -p 90:80 --name ${tag} ramgopalkoya/nginxpoc:${GIT_BRANCH}'
 			}
 		}
 	}
